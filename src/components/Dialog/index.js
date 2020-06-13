@@ -23,7 +23,8 @@ import styles from './Style'
   };
   render(){
     var {open, log, classes} = this.props;
-    //console.log(log)
+
+    //console.log(open)
   return (
     <div >
         <Dialog

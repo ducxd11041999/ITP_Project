@@ -2,7 +2,7 @@ const styles = () => ({
     box: {
         display : "flex",
         alignItem:  "center",
-        backgroundColor : "green"
+        backgroundColor : "#81c784"
     },
     shape:{
         padding : "20px",
