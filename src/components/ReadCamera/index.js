@@ -3,19 +3,19 @@ import Webcam from "react-webcam";
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import styles from './Style'
+//import callApi from './../../utils/Call_api'
 const videoConstraints = {
   width: 1280,
   height: 720,
   facingMode: "user"
 };
-
 const WebcamCapture = () => {
     const webcamRef = React.useRef(null);
     const [imgSrc, setImgSrc] = React.useState(null);
 
 
     const capture = React.useCallback(() => {
-       const imageSrc = webcamRef.current.getScreenshot();
+      const imageSrc = webcamRef.current.getScreenshot();
       setImgSrc(imageSrc);
     }, [webcamRef, setImgSrc]);
 
@@ -44,7 +44,6 @@ const WebcamCapture = () => {
             src={imgSrc}
           />
         )}
-
       </>
     );
   };
@@ -54,7 +53,7 @@ const WebcamCapture = () => {
     const {classes} = this.props;
      return(
       <div className = {classes.root}>
-          <WebcamCapture />
+          <WebcamCapture /> 
       </div>
      )
    }
